@@ -1,0 +1,47 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+}
+
+.music-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    animation: grink 6s linear forwards;
+    overflow: hidden;
+}
+
+.music-banner > * {
+    display: block;
+    padding: 20px;
+    max-width: 8cm;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 4.5mm;
+    line-height: 0.2;
+    font-family: 'Pattaya', sans-serif;
+    background-color: rgba(48, 181, 204, 0.5);
+}
+
+.music-banner > .main {
+    font-weight: 500;
+}
+
+.music-banner > .sub {
+    font-weight: 100;
+}
+
+@keyframes grink {
+    0% { width: 0 }
+    25% { width: 100%; }
+    75% { width: 100%; }
+    100% { width: 0; }
+}
