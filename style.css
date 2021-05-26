@@ -9,15 +9,14 @@ canvas {
     width: 100%;
 }
 
-.music-banner {
+.banner {
     position: fixed;
     bottom: 10px;
     left: 0;
-    animation: grink 6s linear forwards;
     overflow: hidden;
 }
 
-.music-banner > * {
+.banner > * {
     display: block;
     padding: 20px;
     max-width: 8cm;
@@ -28,14 +27,31 @@ canvas {
     font-size: 4.5mm;
     line-height: 0.2;
     font-family: 'Pattaya', sans-serif;
+}
+
+.banner.first {
+    animation: grink 6s linear forwards;
+}
+
+.banner.first > * {
     background-color: rgba(48, 181, 204, 0.5);
 }
 
-.music-banner > .main {
+.banner.second {
+    width: 0;
+    animation: grink 6s linear forwards;
+    animation-delay: 7s;
+}
+
+.banner.second > * {
+    background-color: rgba(48, 204, 126, 0.5);
+}
+
+.banner > .main {
     font-weight: 500;
 }
 
-.music-banner > .sub {
+.banner > .sub {
     font-weight: 100;
 }
 
